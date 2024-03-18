@@ -5,6 +5,7 @@ import CardTotal from '../components/cardTotal';
 import CardLocation from '../components/CardLocation';
 import AddLocationModal from '../components/Modal';
 import axios from 'axios';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 type Props = {};
 
@@ -17,7 +18,10 @@ const LocationScreens = (props: Props) => {
   return (
     <View style={styles.container}>
       <Text style={styles.logo}>
-        Loc<Text style={styles.dot}>.</Text>
+        Location
+        <Text style={styles.dot}>
+          <Icon name="car" />
+        </Text>
       </Text>
       <CardTotal />
       <CardLocation />
@@ -37,7 +41,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
   },
   dot: {
-    fontSize: 40,
+    fontSize: 55,
     color: '#F9AA33',
   },
 });

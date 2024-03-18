@@ -40,7 +40,7 @@ const AddLocationModal: React.FC<AddLocationModalProps> = ({
     };
 
     await axios
-      .post('http://192.168.123.241:5000/location/', newLocation)
+      .post('http://192.168.88.21:5000/location/', newLocation)
       .then(response => {
         console.log('Location added successfully:', response.data);
         onClose();

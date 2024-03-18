@@ -20,12 +20,12 @@ const styles = StyleSheet.create({
   container: {
     position: 'absolute',
     bottom: 30,
-    right: 30,
+    right: 160,
   },
   btnAdd: {
     backgroundColor: '#2c3e50',
-    width: 45,
-    height: 45,
+    width: 55,
+    height: 55,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',

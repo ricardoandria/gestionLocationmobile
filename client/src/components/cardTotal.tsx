@@ -13,9 +13,7 @@ const CardTotal = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(
-          'http://192.168.123.241:5000/location/',
-        );
+        const response = await axios.get('http://192.168.88.21:5000/location/');
         setLocation(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);

@@ -31,7 +31,7 @@ const EditLocationModal: React.FC<EditLocationModalProps> = ({
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://192.168.123.241:5000/location/${id}`,
+          `http://192.168.88.21:5000/location/${id}`,
         );
         const locationData = response.data;
         setNom(locationData.nom);
@@ -58,7 +58,7 @@ const EditLocationModal: React.FC<EditLocationModalProps> = ({
 
     try {
       await axios.put(
-        `http://192.168.123.241:5000/location/${id}`,
+        `http://192.168.88.21:5000/location/${id}`,
         updatedLocation,
       );
       onClose();
